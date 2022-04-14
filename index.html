@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yearly Chocolate Awards Survery</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 id="title">
+          <u><strong>Yearly Chocolate Awards Survey</strong></u>
+        </h1>
+        <h2 id="sub-title">Vote for your favourite chocolates!</h2>
+        <p id="description">
+          Thank you for taking the time to complete this survey.
+        </p>
+      </div>
+    </div>
+    <form id="survey-form">
+      <div class="name-email-age">
+        <div class="container">
+          <ul class="name-email-age-list">
+            <li>
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                class="name-email-age-ids"
+                id="name"
+                name="name"
+                placeholder="Please enter your name here."
+                required
+              />
+            </li>
+            <li>
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                class="name-email-age-ids"
+                id="email"
+                name="email"
+                placeholder="Please enter your email here."
+                required
+              />
+            </li>
+            <li>
+              <label for="number" id="number-label">Age</label>
+              <input
+                type="number"
+                class="name-email-age-ids"
+                id="number"
+                name="number"
+                min="13"
+                max="125"
+                placeholder="Please enter your age here."
+                required
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="location">
+          <div class="container">
+            <fieldset>
+              <legend>
+                <h4>Which continent do you live in?</h4>
+              </legend>
+              <p>(For the "Continents are their favourite chocolates" award)</p>
+              <select id="dropdown" name="location">
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+                <option value="europe">Europe</option>
+                <option value="asia">Asia</option>
+                <option value="africa">Africa</option>
+                <option value="oceania">Oceania</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="best-chocolate">
+          <div class="container">
+            <fieldset>
+              <legend>
+                <h4>What was your favourite chocolate this year?</h4>
+              </legend>
+              <input
+                type="text"
+                id="best-chocolate"
+                name="best-chocolate"
+                placeholder="Please enter your favourite chocolate here."
+              />
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="2-best-chocolate">
+          <div class="container">
+            <fieldset>
+              <legend>
+                <h4>What was your second favourite chocolate this year?</h4>
+              </legend>
+              <input
+                type="text"
+                id="2-best-chocolate"
+                name="2-best-chocolate"
+                placeholder="Please enter your second favourtite chocolate here."
+              />
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="white-milk-dark">
+          <div class="container">
+            <fieldset>
+              <legend>
+                <h4>Which of the following was your favourite this year?</h4>
+              </legend>
+              <select id="dropdown" name="white-milk-dark">
+                <option value="milk">Milk Chocolate</option>
+                <option value="dark">Dark Chocolate</option>
+                <option value="white">White Chocolate</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="options">
+          <fieldset>
+            <legend>
+              <h4>
+                Which of the following is your favourite from last year's top 3?
+              </h4>
+            </legend>
+            <ul class="chocolate-top3">
+              <li>
+                <label for="bounty"
+                  >Bounty
+                  <input
+                    type="radio"
+                    name="top3-voting"
+                    id="bounty"
+                    value="bounty"
+                  />
+                </label>
+              </li>
+              <li>
+                <label for="milka-oreo"
+                  >Milka Oreo
+                  <input
+                    type="radio"
+                    name="top3-voting"
+                    id="milka-oreo"
+                    value="milka-oreo"
+                  />
+                </label>
+              </li>
+              <li>
+                <label for="maltesers-bar"
+                  >Maltesers Bar
+                  <input
+                    type="radio"
+                    name="top3-voting"
+                    id="maltesers-bar"
+                    value="maltesers-bar"
+                  />
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <div class="container-checklist">
+        <h4>Do you have any eating requirements or preferences?</h4>
+        <ul class="eating-reqs">
+          <li>
+            <label for="no"
+              >No<input type="checkbox" id="no" name="no" value="no" />
+            </label>
+          </li>
+          <li>
+            <label for="diabetes"
+              >Diabetes<input
+                type="checkbox"
+                id="diabetes"
+                name="diabetes"
+                value="diabetes"
+              />
+            </label>
+          </li>
+          <li>
+            <label for="vegan"
+              >Vegan<input
+                type="checkbox"
+                id="vegan"
+                name="vegan"
+                value="vegan"
+              />
+            </label>
+          </li>
+          <li>
+            <label for="allergies"
+              >Allergies<input
+                type="checkbox"
+                id="allergies"
+                name="allergies"
+                value="allergies"
+              />
+            </label>
+          </li>
+          <li>
+            <label for="other"
+              >Other<input
+                type="checkbox"
+                id="other"
+                name="other"
+                value="other"
+              />
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="anything-else">
+          <label for="anything-else">Anything else?</label>
+          <textarea id="anything-else"></textarea>
+          <button type="submit" id="submit" value="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <h6>
+      <a
+        href="https://github.com/nd0003/Chocolate-Awards-Survey-Page"
+        target="_blank"
+        >Project source code</a
+      >
+    </h6>
+  </body>
+</html>
